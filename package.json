@@ -1,0 +1,17 @@
+{
+  "name": "meridiano",
+  "version": "1.0.0",
+  "description": "Jogo de tiro em primeira pessoa que roda no navegador, num único arquivo HTML",
+  "private": true,
+  "scripts": {
+    "start": "python devserver.py",
+    "test": "node --test tests/mission-regression.cjs tests/map-physics.cjs tests/jetpack-physics.cjs tests/weapon-pose.cjs",
+    "test:browser": "node tests/runtime-smoke.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedropaivaf/GameGPT.git"
+  },
+  "keywords": ["game", "fps", "threejs", "webgl", "browser"],
+  "license": "UNLICENSED"
+}

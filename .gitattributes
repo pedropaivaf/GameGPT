@@ -1,0 +1,14 @@
+# Normaliza para LF no repositório; o checkout usa o padrão da plataforma.
+* text=auto
+
+*.html  text eol=lf
+*.js    text eol=lf
+*.cjs   text eol=lf
+*.py    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+
+# index.html carrega os modelos como base64 e não se lê num diff.
+index.html                                  linguist-generated
+tests/vendor/*.js                           linguist-vendored
+tests/fixtures/phoenix_skinned_asset.json   linguist-generated

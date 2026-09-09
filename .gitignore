@@ -1,0 +1,34 @@
+# Modelos de origem (~330 MB de FBX e texturas 4K).
+# A geometria que o jogo usa já está embutida em index.html; estes diretórios
+# só são necessários para reprocessar um asset. Veja docs/asset-pipeline.md
+# para as origens e como reobtê-los.
+beretta-m9a1-w-slide-lock/
+hand-and-arm-for-first-person-perspective/
+sniper-rifle/
+tm-phoenix-v2-csgo-terrorist-characters/
+
+# Payloads intermediários do pipeline: gerados a partir dos FBX acima e depois
+# embutidos no index.html, onde é que eles realmente vivem.
+# (tests/fixtures/ é exceção: aquele é dependência de teste e vai versionado.)
+tools/out/
+tools/*.json
+tools/tex_*.jpg
+
+# Builds e cópias de trabalho
+backups/
+index.debug.html
+*.bak
+*.bak.html
+index.original.backup.html
+
+# Saída de execução
+debug.log
+tests/artifacts/
+.playwright-mcp/
+
+# Ambiente
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
